@@ -4,6 +4,20 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.9"
-dependencies = [
-    "ruff>=0.6.5",
+dependencies = ["pytest>=8.3.3", "ruff>=0.6.5"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    # documentation doesn't apply
+    "D100",
+    "D103",
+    # literally need to print things sorry
+    "T201",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = [
+    "S101",    # kinda need to assert
+    "PLR2004", # lots of magic numbers in tests
 ]
