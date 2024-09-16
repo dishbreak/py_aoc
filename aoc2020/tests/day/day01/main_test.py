@@ -1,6 +1,6 @@
 import pytest
 
-from day.day01.main import part1, part2
+from day.day01 import part1, part2
 
 
 @pytest.fixture
