@@ -10,8 +10,7 @@ dependencies = ["pytest>=8.3.3", "ruff>=0.6.5"]
 select = ["ALL"]
 ignore = [
     # documentation doesn't apply
-    "D100",
-    "D103",
+    "D",
     # literally need to print things sorry
     "T201",
 ]
