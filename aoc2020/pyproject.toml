@@ -22,3 +22,7 @@ solve-day = "scripts.day:main"
     "S101",    # kinda need to assert
     "PLR2004", # lots of magic numbers in tests
 ]
+
+[tool.pytest.ini_options]
+log_cli_level = "DEBUG"
+log_cli = true
