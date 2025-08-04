@@ -1,4 +1,4 @@
-from day05 import is_valid_ordering, parse_rules, fix_ordering
+from solution.day05 import is_valid_ordering, parse_rules, fix_ordering
 
 import pytest
 
@@ -71,7 +71,7 @@ def test_is_valid_order(parsed_rules, ordering, result):
 @pytest.mark.parametrize(
     "ordering,result",
     [
-        [[75, 97, 47, 61, 53],[97, 75, 47, 61, 53]],
+        [[75, 97, 47, 61, 53], [97, 75, 47, 61, 53]],
         [[61, 13, 29], [61, 29, 13]],
         [[97, 13, 75, 29, 47], [97, 75, 47, 29, 13]],
     ],

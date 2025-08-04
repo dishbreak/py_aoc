@@ -1,6 +1,6 @@
 import pytest
 
-from day04 import toSpaceHash, part1, part2
+from solution.day04 import toSpaceHash, part1, part2
 
 
 @pytest.fixture

@@ -1,5 +1,5 @@
 import pytest
-from day02 import is_safe_report, is_safe_enough_report
+from solution.day02 import is_safe_report, is_safe_enough_report
 
 
 @pytest.mark.parametrize(
